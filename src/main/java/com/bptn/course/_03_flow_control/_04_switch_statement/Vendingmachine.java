@@ -1,11 +1,14 @@
 package com.bptn.course._03_flow_control._04_switch_statement;
 
+import java.util.Scanner;
+
 public class Vendingmachine {
 public static void main(String[] args) {
 		
 	// declare scanner and variables
 	
-	Scanner scanner = new Scanner(System.in)
+	Scanner scanner = new Scanner(System.in);
+	
 	// create scanner object
 			
 	// display list of products with their prices
@@ -35,5 +38,10 @@ public static void main(String[] args) {
 			case 5: System.out.println("Thank you for stopping by!");
 					break;
 			default:System.out.println("Invalid Choice!");
+		
+		
+			scanner.close();
 		}
+		
+}
 }

@@ -1,5 +1,7 @@
 package com.bptn.course._03_flow_control._04_switch_statement;
 
+import java.util.Scanner;
+
 public class SwitchCalculator {
 
 public static void main(String[] args) {
@@ -28,6 +30,9 @@ public static void main(String[] args) {
 			case 5: System.out.println("Thank you for stopping by!");
 					break;
 			default:System.out.println("Invalid Choice!");
+		
+			scanner.close(); 
+		
 		}
 		
 		// 1. Allow multiple selections	
