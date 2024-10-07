@@ -2,11 +2,10 @@ package com.bptn.course_big_coding_challenge_1st_week;
 
 import java.util.Scanner;
 
-public class Calculatorchallenge {
+public class Testcalculator {
 
 	public static void main(String[] args) {
-		
-		Scanner scanner = new Scanner(System.in); // this object is used to accept input from the user
+Scanner scanner = new Scanner(System.in); // this object is used to accept input from the user
 		
 		//this is the declaration
 		int number;
@@ -30,13 +29,20 @@ public class Calculatorchallenge {
 			System.out.println("Invalid choice! Please make a valid choice.");
 		}
 		
-		if (choice == 1 || choice == 2 || choice == 3 || choice == 4) {
+		else {
+			System.out.print("Enter the first Number: ");
+			firstNumber = scanner.nextDouble();
+			
+			System.out.print("Enter the second Number: ");
+			secondNumber = scanner.nextDouble();
+			
+			if (choice == 1 || choice == 2 || choice == 3 || choice == 4) {
 							
-		System.out.print("Enter the first number: ");
-		firstNumber = scanner.nextDouble();
-		
-		System.out.print("Enter the second number: ");
-		secondNumber = scanner.nextDouble();
+//		System.out.print("Enter the first number: ");
+//		firstNumber = scanner.nextDouble();
+//		
+//		System.out.print("Enter the second number: ");
+//		secondNumber = scanner.nextDouble();
 		
 		// this is for the first choice which is addition 
 				if( choice == 1) {
@@ -88,8 +94,8 @@ public class Calculatorchallenge {
 		
 		
 		scanner.close();
-		
-
 	}
 
+}
+	
 }
